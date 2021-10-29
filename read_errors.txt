@@ -1,0 +1,36 @@
+This doc is about the errors I came across while developing the project
+
+    =>git init ed and added .gitignore but it is not ignoring the files
+        - I see all the files turning gren (meaning git is not ignoring)
+        - Used rm -rf .git to to delete git repo
+
+            FIX :: once the files turns gree it just means 
+    
+    =>Could not upload local repo to remote 
+        -tried following steps
+            -$git init
+            -$git add .
+            -$git status
+            -$git commit -m 'xyz message'
+            -$git remote add origin 'url_address'
+            -$git remote -v
+            -$git push -u origin master
+
+                -later when nothing worked i reverted back using $rm -rf .git(to remove git from local)
+
+            FIX :: ?
+
+    =>res.send(number)
+        -could not use res.send to send any number 
+        FIXED:: I had to convert that vatiable to string using .toString (ref. questionOne.js)
+
+    =>Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+        -Gave an error if I try to do app.res('') TWICE
+            FIXED :: you can't use app.res twice because you already responded to the client the first time you sent res.send
+
+    => "RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 0"
+        - variables finalScore & setTimer are declared in nameMatch.js and 
+          need to access those variables in server.js but am not able to do so..why?
+                FIXED ::
+       
+

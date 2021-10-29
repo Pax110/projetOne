@@ -1,0 +1,24 @@
+This doc is about current bugs and future feature add-ons 
+
+
+=>  Bugs:
+
+
+
+
+
+
+=> Features:
+    -add hints (pictures?)
+
+    -what if user gives invalid input
+
+    -what if the user don't know the answer
+
+  ***  -html button & input fields instead of typing queries (ex. query?para1=value1) 
+
+
+    -MultiPlayer? or Two Player turn , one after the other for each questions 
+    
+    - Database collections to check word authenticity
+    
